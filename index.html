@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.12/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <header class="w-10/12 mx-auto">
+        <nav class="flex flex-col md:flex-row justify-between items-center py-5">
+            <div class="logo flex gap-2">
+                <img src="assets/logo.webp" alt="">
+                <h2 class="text-2xl font-bold">Peddy</h2>
+            </div>
+            <ul class="flex flex-col md:flex-row gap-2 ml-4 md:ml-0 md:gap-x-12 justify-center md:justify-between items-center text-xl ">
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+            <div class="user-icon border rounded-full p-1 hidden md:block">
+                <img src="assets/Frame.png" alt="">
+            </div>
+
+        </nav>
+        <div class="banner">
+            <div class="text-box text-center">
+                <h2 class="banner-title leading-8">
+                  <span class="sm-banner-title text-gray-600 text-xl font-semibold leading-4 ">  Bringing Families Together ❤️‍🔥 </span> <br>
+                  <span class="lg-banner-title text-6xl font-bold">Your Path to Adoption <br>Starts Here</span>
+
+                </h2>
+                <p class="banner-description py-6">It is a long established fact that a reader will be distracted by the readable content of a page when looking <br> at its layout. The point of using Lorem Ipsum is that it has a.</p>
+                <button  class="btn px-8 bg-[#0E7A81] hover:bg-[#0E7A81] text-white text-xl font-bold">View More</button>
+
+            </div >
+            <div  class="photo flex justify-center pl-12">
+                <img src="assets/pet.webp" alt="">
+
+            </div>
+
+        </div>
+    </header>
+    <main>
+        <section class="w-10/12 mx-auto">
+            <div class="adopt-text-box text-center pl-12">
+                <h2 class="text-4xl font-bold py-4">Adopt  Your  Best Friend</h2>
+                <p class="">It is a long established fact that a reader will be distracted by the readable content of a <br> page when looking at its layout. The point of using Lorem Ipsum is that it has a.</p>
+            </div>
+
+        </section>
+        <section id="category-section" class="w-8/12 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 x-11 py-16 pl-12">
+            
+            
+
+
+        </section>
+        <section id="sort-section" class=" w-8/12 mx-auto flex gap-4 flex-col md:flex-row justify-between items-center ">
+            <h2 class="text-3xl font-bold pl-6">Best Deal For You</h2>
+            <button onclick="loadAllPets()" class="btn mybutton font-bold text-xl w-[120px]">Sort</button>
+
+
+        </section>
+        <section class="w-10/12  flex mx-auto gap-4 py-4">
+            <div class="w-8/12 md:w-10/12 lg:w-9/12 border  ">
+                <div  id="pet-contaienr-section" class="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3" >
+
+                </div>
+            
+            </div>
+            <div  class="w-4/12 md:w-2/12 lg:w-3/12 border">
+                <div id="sidebar-photo-container" class="grid gap-1 md:grid-cols-1 lg:grid-cols-2">
+
+                </div>
+                    
+                 
+                  
+               
+
+            </div>
+
+        </section>
+        <button class="btn hidden" onclick="customModal.showModal()">open modal</button>
+<dialog id="customModal" class="modal modal-bottom sm:modal-middle">
+  <div id="modal-container" class="modal-box">
+    
+  </div>
+</dialog>
+<div id="spinner" class="spinner" style="display: none;"></div>
+<div id="content">
+</div>
+
+
+
+<button id="adopt-modal-btn"  class="btn hidden" onclick="adoptModal.showModal()">open modal</button>
+<dialog id="adoptModal" class="modal modal-bottom sm:modal-middle">
+  <div id="adopt-modal-container" class="modal-box">
+
+  </div>
+</dialog>
+    </main>
+    <footer id="footer" class="bg-black ">
+        <div class="w-10/12 mx-auto  grid gap-12 grid-cols-1 md:grid-cols-3 justify-between  items-start">
+            <div class="py-4 flex flex-col gap-4 justify-center items-start">
+                <div class="logo flex gap-2">
+                    <img src="assets/logo.webp" alt="">
+                    <h2 class="text-2xl font-bold text-white">Peddy</h2>
+                </div>
+                <div class="address py-4 text-white">
+                    <ul class="flex flex-col justify-center items-start">
+                        <li>Location: av. Washington 165, NY CA 54003</li>
+                        <li>Phone: +31 85 964 47 25</li>
+                        <li>Email: info@yourdomain.com</li>
+                        <li>Openings hours: 9.00 AM - 5.00 PM</li>
+                    </ul>
+                </div>
+                <div class="social-media ">
+                    <ul class="flex gap-4">
+                        <li><img src="assets/x-twiter.png" alt=""></li>
+                        <li><img src="assets/youtube.png" alt=""></li>
+                        <li><img src="assets/facebook.png" alt=""></li>
+                        <li><img src="assets/instagram.png" alt=""></li>
+                    </ul>
+                </div>
+
+                
+
+
+
+
+
+
+
+            </div>
+            <div class=" text-white py-4 flex flex-col gap-4 justify-center items-center">
+                <h3 class="text-2xl font-bold pl-12">Useful Links</h3>
+                <ul class="flex gap-3 flex-col justify-start items-start">
+                    <li>Home</li>
+                    <li>About Us</li>
+                    <li>Foundation</li>
+                    <li>Contact</li>
+                </ul>
+               
+
+
+
+
+
+
+
+
+
+            </div>
+            <div class=" py-4 flex flex-col gap-4 justify-start items-center">
+                <h3 class="text-2xl font-bold text-white">Drop A Message</h3>
+                <input class="py-2 border rounded-[18px] px-4" type="email" name="" id="" placeholder="Enter Your Email">
+                <button class="subscribeButton py-1 px-1 font-bold text-xl">Subscribe Now</button>
+            </div>
+
+        </div>
+
+    </footer>
+    
+
+
+
+
+
+    <script src="js/loadData.js"></script>
+    <script src="js/displayData.js"></script>
+</body>
+</html>
